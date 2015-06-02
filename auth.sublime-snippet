@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+	public $components = array(
+		'DebugKit.Toolbar',
+        'Session',
+        'Auth' => array(
+        	'loginAction' => array('controller' => 'login', 'action' => 'index'),
+            'loginRedirect' => array('controller' => 'hospedagem', 'action' => 'index'),
+            'logoutRedirect' => array('controller' => 'login', 'action' => 'index'),
+            'authenticate' => array(
+	            'Form' => array(
+	                'fields' => array(
+	                	'username' => 'email',
+	                	'password' => 'senha'
+	                )
+	            ),
+	            'all' => array('userModel' => 'Usuario'),
+        	)
+        )
+    );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>auth</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
