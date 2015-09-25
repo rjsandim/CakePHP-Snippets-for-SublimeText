@@ -4,37 +4,37 @@ class ${1:Name}Component extends Component {
 
 	/**
 	 * O método initialize é chamado antes do método beforeFilter do controller.
-	 * @param  Controller $controller [description]
+	 * @param  Controller \$controller [description]
 	 * @return [type]                 [description]
 	 */
-	function initialize(Controller $controller) {
+	function initialize(Controller \$controller) {
 		
 	}
 
 	/**
 	 * O método startup é chamado após o método beforeFilter do controller mas antes que o controller execute a ação.
-	 * @param  Controller $controller [description]
+	 * @param  Controller \$controller [description]
 	 * @return [type]                 [description]
 	 */
-	function startup(Controller $controller) {
+	function startup(Controller \$controller) {
 
 	}
 
 	/**
 	 * O método beforeRender é chamado após o controller executar a lógica da ação requisitada mas antes que o controller renderize a view e o layout.
-	 * @param  Controller $controller [description]
+	 * @param  Controller \$controller [description]
 	 * @return [type]                 [description]
 	 */
-	function beforeRender(Controller $controller) {
+	function beforeRender(Controller \$controller) {
 
 	}
 
 	/**
 	 * O método shutdown é chamado antes que o conteúdo seja enviado para o browser.
-	 * @param  Controller $controller [description]
+	 * @param  Controller \$controller [description]
 	 * @return [type]                 [description]
 	 */
-	function shutdown(Controller $controller) {
+	function shutdown(Controller \$controller) {
 		
 	}
 
@@ -42,13 +42,13 @@ class ${1:Name}Component extends Component {
 	 * Esse callback é invocado antes de qualquer chamada $this->redirect.
 	 * Se este método refornar false o controller não irá continuar com o redirecionamento.
 	 * 
-	 * @param  Controller $controller 
-	 * @param  [type]     $url        
-	 * @param  [type]     $status     
-	 * @param  boolean    $exit       
+	 * @param  Controller \$controller 
+	 * @param  [type]     \$url        
+	 * @param  [type]     \$status     
+	 * @param  boolean    \$exit       
 	 * @return [type]              
 	 */
-	function beforeRedirect(Controller $controller, $url, $status=null, $exit=true) {
+	function beforeRedirect(Controller \$controller, \$url, \$status=null, \$exit=true) {
 		return true;
 	}
 	
